@@ -1,5 +1,5 @@
 FROM node:12-alpine as builder
-COPY ./package.json ./package-lock.json ./
+COPY KEM.EventManager.Public.UI/package.json KEM.EventManager.Public.UI/package-lock.json ./
 RUN npm i -f && mkdir /angularapp && cp -R ./node_modules ./angularapp
 WORKDIR /angularapp
 COPY . .
