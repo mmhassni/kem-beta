@@ -1,4 +1,3 @@
-﻿
 FROM node:12-alpine as builder
 COPY ./package.json ./package-lock.json ./
 RUN npm i -f && mkdir /angularapp && cp -R ./node_modules ./angularapp
