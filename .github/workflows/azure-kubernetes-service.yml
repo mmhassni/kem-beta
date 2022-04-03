@@ -69,7 +69,7 @@ jobs:
 
     # Container build to a Azure Container Registry (ACR) Frontend
     - name: docker build
-      run: docker build . -f ui.Dockerfile . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
+      run: docker build . -f ui.Dockerfile -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
     
     # Container build to a Azure Container Registry (ACR) Frontend
     - name: docker push
