@@ -1,5 +1,3 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
@@ -7,16 +5,15 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["KEM.EventManger.API/KEM.EventManger.API.csproj", "./"]
-RUN dotnet restore "KEM.EventManger.API.csproj"
-COPY ./KEM.EventManger.API .
-#WORKDIR "/src/KEM.EventManger.API"
-RUN dotnet build "KEM.EventManger.API.csproj" -c Release -o /app/build
+COPY ["KEM.EventManager.API.csproj", "./"]
+RUN dotnet restore "KEM.EventManager.API.csproj"
+COPY . .
+RUN dotnet build "KEM.EventManager.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "KEM.EventManger.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "KEM.EventManager.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "KEM.EventManger.API.dll","-v","diag"]
+ENTRYPOINT ["dotnet", "KEM.EventManager.API.dll","-v","diag"]
