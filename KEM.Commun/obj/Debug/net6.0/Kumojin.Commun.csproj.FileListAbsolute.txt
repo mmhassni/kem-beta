@@ -1,0 +1,12 @@
+C:\Users\simo\source\repos\KEM\KEM.Commun\bin\Debug\net6.0\Kumojin.Commun.deps.json
+C:\Users\simo\source\repos\KEM\KEM.Commun\bin\Debug\net6.0\Kumojin.Commun.dll
+C:\Users\simo\source\repos\KEM\KEM.Commun\bin\Debug\net6.0\Kumojin.Commun.pdb
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\Kumojin.Commun.csproj.AssemblyReference.cache
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\Kumojin.Commun.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\Kumojin.Commun.AssemblyInfoInputs.cache
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\Kumojin.Commun.AssemblyInfo.cs
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\Kumojin.Commun.csproj.CoreCompileInputs.cache
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\Kumojin.Commun.dll
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\refint\Kumojin.Commun.dll
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\Kumojin.Commun.pdb
+C:\Users\simo\source\repos\KEM\KEM.Commun\obj\Debug\net6.0\ref\Kumojin.Commun.dll

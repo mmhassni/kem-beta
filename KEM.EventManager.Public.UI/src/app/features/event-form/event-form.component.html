@@ -1,0 +1,55 @@
+<div class="container">
+  <form [formGroup]="eventForm" (ngSubmit)="submit($event)">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="description" formControlName="description" ></textarea>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Start date</mat-label>
+      <input matInput
+             name="startDate"
+             [ngxMatDatetimePicker]="pickerStart"
+             formControlName="startDate">
+      <mat-datepicker-toggle matSuffix [for]="$any(pickerStart)"></mat-datepicker-toggle>
+      <ngx-mat-datetime-picker #pickerStart [showSpinners]="true"
+                               [showSeconds]="false"
+                               [stepHour]="1"
+                               [stepMinute]="15"
+                               [stepSecond]="30"
+                               [defaultTime]="[0]"
+                               [enableMeridian]="true"
+                               [color]="'primary'">
+      </ngx-mat-datetime-picker>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="outline">
+      <mat-label>End date</mat-label>
+      <input matInput
+             name="endDate"
+             [ngxMatDatetimePicker]="pickerEnd"
+             formControlName="endDate">
+      <mat-datepicker-toggle matSuffix [for]="$any(pickerEnd)"></mat-datepicker-toggle>
+      <ngx-mat-datetime-picker #pickerEnd [showSpinners]="true"
+                               [showSeconds]="false"
+                               [stepHour]="1"
+                               [stepMinute]="15"
+                               [stepSecond]="30"
+                               [defaultTime]="[0]"
+                               [enableMeridian]="true"
+                               [color]="'primary'">
+      </ngx-mat-datetime-picker>
+    </mat-form-field>
+    <br>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="!eventForm.valid">Create Event</button>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+<mat-nav-list>
+  <mat-list-item *ngFor="let link of menu">
+    <mat-icon>{{link.icon}}</mat-icon>
+    <span style="margin-left: 5px">
+      <a matLine [href]="link.value">
+        {{ link.label }}
+      </a>
+    </span>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-nav-list>

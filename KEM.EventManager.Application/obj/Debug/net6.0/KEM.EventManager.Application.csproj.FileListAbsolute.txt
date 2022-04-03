@@ -1,0 +1,17 @@
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\bin\Debug\net6.0\KEM.EventManager.Application.deps.json
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\bin\Debug\net6.0\KEM.EventManager.Application.dll
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\bin\Debug\net6.0\KEM.EventManager.Application.pdb
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\bin\Debug\net6.0\KEM.EventManager.Domaine.dll
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\bin\Debug\net6.0\KEM.EventManager.Infrastructure.dll
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\bin\Debug\net6.0\KEM.EventManager.Domaine.pdb
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\bin\Debug\net6.0\KEM.EventManager.Infrastructure.pdb
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.csproj.AssemblyReference.cache
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.AssemblyInfoInputs.cache
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.AssemblyInfo.cs
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.csproj.CoreCompileInputs.cache
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.csproj.CopyComplete
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.dll
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\refint\KEM.EventManager.Application.dll
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\KEM.EventManager.Application.pdb
+C:\Users\simo\source\repos\KEM\KEM.EventManager.Application\obj\Debug\net6.0\ref\KEM.EventManager.Application.dll

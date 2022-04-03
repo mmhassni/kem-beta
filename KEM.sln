@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KEM.EventManager.Domaine", "KEM.EventManager.Domaine\KEM.EventManager.Domaine.csproj", "{D8099CA2-1CBD-446F-9A9C-6AC0D7AFB299}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KEM.EventManager.Domaine.TSTIC", "KEM.EventManager.Domaine.TSTIC\KEM.EventManager.Domaine.TSTIC.csproj", "{F1E7CB5F-D508-4355-BE19-366A324C55C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEM.EventManager.Infrastructure", "KEM.EventManager.Infrastructure\KEM.EventManager.Infrastructure.csproj", "{FD0D589E-41C8-4DB8-8CE8-3F7C555D298B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kumojin.Commun", "KEM.Commun\Kumojin.Commun.csproj", "{8F50C442-D311-4940-8CD8-C77FCA9C58BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kumojin.Commun.TSTIC", "KEM.EventManager.Commun.TSTIC\Kumojin.Commun.TSTIC.csproj", "{2AC2C3F5-7E01-4E53-8C85-9F5573990827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEM.EventManager.Infrastructure.TSTIC", "KEM.EventManager.Infrastructure.TSTIC\KEM.EventManager.Infrastructure.TSTIC.csproj", "{10DC1327-BB40-42CB-8988-61EDA32BA648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEM.EventManager.API", "KEM.EventManager.API\KEM.EventManager.API.csproj", "{E8EB9802-1F3E-4310-9DAC-3E1A59AC3635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEM.EventManager.API.TSTIC", "KEM.EventManager.API.TSTIC\KEM.EventManager.API.TSTIC.csproj", "{23C7C7E8-0E7C-432D-B41A-EE3CE8F21CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEM.EventManager.Application", "KEM.EventManager.Application\KEM.EventManager.Application.csproj", "{AAB673C4-F876-442D-9DF3-62AD0E8CD6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KEM.EventManager.Application.TSTIC", "KEM.EventManager.Application.TSTIC\KEM.EventManager.Application.TSTIC.csproj", "{6430C728-05FA-4699-9440-0F58ED103958}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8099CA2-1CBD-446F-9A9C-6AC0D7AFB299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8099CA2-1CBD-446F-9A9C-6AC0D7AFB299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8099CA2-1CBD-446F-9A9C-6AC0D7AFB299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8099CA2-1CBD-446F-9A9C-6AC0D7AFB299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E7CB5F-D508-4355-BE19-366A324C55C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E7CB5F-D508-4355-BE19-366A324C55C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E7CB5F-D508-4355-BE19-366A324C55C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E7CB5F-D508-4355-BE19-366A324C55C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0D589E-41C8-4DB8-8CE8-3F7C555D298B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0D589E-41C8-4DB8-8CE8-3F7C555D298B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0D589E-41C8-4DB8-8CE8-3F7C555D298B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0D589E-41C8-4DB8-8CE8-3F7C555D298B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F50C442-D311-4940-8CD8-C77FCA9C58BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F50C442-D311-4940-8CD8-C77FCA9C58BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F50C442-D311-4940-8CD8-C77FCA9C58BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F50C442-D311-4940-8CD8-C77FCA9C58BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC2C3F5-7E01-4E53-8C85-9F5573990827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC2C3F5-7E01-4E53-8C85-9F5573990827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC2C3F5-7E01-4E53-8C85-9F5573990827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC2C3F5-7E01-4E53-8C85-9F5573990827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DC1327-BB40-42CB-8988-61EDA32BA648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DC1327-BB40-42CB-8988-61EDA32BA648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DC1327-BB40-42CB-8988-61EDA32BA648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DC1327-BB40-42CB-8988-61EDA32BA648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8EB9802-1F3E-4310-9DAC-3E1A59AC3635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8EB9802-1F3E-4310-9DAC-3E1A59AC3635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8EB9802-1F3E-4310-9DAC-3E1A59AC3635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8EB9802-1F3E-4310-9DAC-3E1A59AC3635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C7C7E8-0E7C-432D-B41A-EE3CE8F21CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C7C7E8-0E7C-432D-B41A-EE3CE8F21CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C7C7E8-0E7C-432D-B41A-EE3CE8F21CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C7C7E8-0E7C-432D-B41A-EE3CE8F21CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB673C4-F876-442D-9DF3-62AD0E8CD6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB673C4-F876-442D-9DF3-62AD0E8CD6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB673C4-F876-442D-9DF3-62AD0E8CD6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB673C4-F876-442D-9DF3-62AD0E8CD6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6430C728-05FA-4699-9440-0F58ED103958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6430C728-05FA-4699-9440-0F58ED103958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6430C728-05FA-4699-9440-0F58ED103958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6430C728-05FA-4699-9440-0F58ED103958}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43E780F5-0D97-4343-8AC1-66BBC9476D04}
+	EndGlobalSection
+EndGlobal

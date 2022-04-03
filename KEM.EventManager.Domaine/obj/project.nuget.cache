@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kjsi2PJzUScSNuOGp9KerZmRUKoJ6vfVjktEKSsNkUlofUr/jF3ucbX0C11lquHaiO5icojBKKc/809cnnVSrg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\simo\\source\\repos\\KEM\\KEM.EventManager.Domaine\\KEM.EventManager.Domaine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\simo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

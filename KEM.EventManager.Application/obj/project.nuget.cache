@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "UCV35MFaRcRBuioBkDJPtnJOX53Or5s8re/N1g9VuKKjI1n/hI7y39PqvNdQPJWbEtE+lRfxJ4BMQ4urxHUGsg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\simo\\source\\repos\\KEM\\KEM.EventManager.Application\\KEM.EventManager.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\simo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\simo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\simo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
