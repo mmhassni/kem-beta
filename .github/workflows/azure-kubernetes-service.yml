@@ -39,7 +39,8 @@ env:
   CLUSTER_NAME: "gestion-evenement"
   CLUSTER_RESOURCE_GROUP: "utilitaire"
   NAMESPACE: "ingress-basic"
-  APP_NAME: "kem-api"
+  BACKEND_APP_NAME: "kem-api"
+  FRONTEND_APP_NAME: "kem-ui"
   SECRET: "docker-image-pull-secret"
   K8S_RESOURCE_GROUP: "utilitaire"
   
@@ -58,14 +59,22 @@ jobs:
         username: ${{ secrets.REGISTRY_USERNAME }} 
         password: ${{ secrets.REGISTRY_PASSWORD }}
     
-    # Container build to a Azure Container Registry (ACR)
+    # Container build to a Azure Container Registry (ACR) Backend
     - name: docker build
-      run: docker build . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
+      run: docker build . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.BACKEND_APP_NAME }}:${{ github.sha }}
     
-    # Container build to a Azure Container Registry (ACR)
+    # Container build to a Azure Container Registry (ACR) Backend
     - name: docker push
-      run: docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
+      run: docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.BACKEND_APP_NAME }}:${{ github.sha }}
 
+    # Container build to a Azure Container Registry (ACR) Frontend
+    - name: docker build
+      run: docker build . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
+    
+    # Container build to a Azure Container Registry (ACR) Frontend
+    - name: docker push
+      run: docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
+    
     # Set the target Azure Kubernetes Service (AKS) cluster. 
     - uses: azure/aks-set-context@v1
       with:
@@ -97,12 +106,13 @@ jobs:
       with:
         # Path to the manifest files which will be used for deployment.
         manifests: |
-          k8s/deployment.yml
-          k8s/service.yml
-        # k8s/ingress.yml
+          kubernetes/deployment.yml
+          kubernetes/service.yml
+        # kubernetes/ingress.yml
         # Fully qualified resource URL of the image(s) to be used for substitutions on the manifest files Example: contosodemo.azurecr.io/helloworld:test  
         images: |
-          ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:${{ github.sha }}
+          ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.BACKEND_APP_NAME }}:${{ github.sha }}
+        # ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
         # Name of a docker-registry secret that has already been set up within the cluster. Each of these secret names are added under imagePullSecrets field for the workloads found in the input manifest files
         imagepullsecrets: |
           ${{ env.SECRET }}
