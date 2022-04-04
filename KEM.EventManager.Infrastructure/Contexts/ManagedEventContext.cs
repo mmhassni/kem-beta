@@ -20,8 +20,8 @@ namespace KEM.EventManager.Infrastructure.Contexts
                 .WithId(1)
                 .WithName("Event Test")
                 .WithDescription("Test Description")
-                .WithStartTime(new DateTime())
-                .WithFinishTime(new DateTime().AddDays(5))
+                .WithStartTime(DateTime.UtcNow)
+                .WithFinishTime(DateTime.UtcNow.AddDays(5))
                 .Build()
         };
     }
