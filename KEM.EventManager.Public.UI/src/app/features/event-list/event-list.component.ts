@@ -33,6 +33,7 @@ export class EventListComponent implements OnInit {
   loadEvents() {
     this.eventsLoading = true;
     this.eventsService.getEvents().subscribe((data: any ) => {
+      console.log(data);
       this.dataSource.data = data;
       this.eventsLoading = false;
     }, (error) => {

@@ -10,4 +10,5 @@ RUN npm run build
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/* 
 COPY --from=builder /angularapp/dist/frontend /usr/share/nginx/html
+COPY KEM.EventManager.Public.UI/nginx.conf  /etc/nginx/conf.d/default.conf
 CMD ["nginx", "-g", "daemon off;"]
