@@ -11,6 +11,7 @@ var config = new MapperConfiguration(configuration => {
 var mapper = config.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
+
 // Project Specific Services
 builder.Services.EventManagerServices();
 
@@ -22,9 +23,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Cors configuration
-builder.Services.AddCors();
-
+// Add corse
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
 
 
 

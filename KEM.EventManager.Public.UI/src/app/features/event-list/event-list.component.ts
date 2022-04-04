@@ -40,6 +40,7 @@ export class EventListComponent implements OnInit {
       /*setTimeout(() => {
         this.eventsLoading = false;
       }, 3000)*/
+      console.log(error);
       this.dataSource.data = this.mockedEvents;
       this.eventsLoading = false;
     });
