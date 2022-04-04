@@ -2,24 +2,23 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuComponent } from './menu.component';
 
-describe('MenuComponent', () => {
+describe('HeaderComponent', () => {
   let component: MenuComponent;
   let fixture: ComponentFixture<MenuComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ MenuComponent ]
-    })
-    .compileComponents();
-  });
-
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+      TestBed.configureTestingModule({declarations: [MenuComponent]});
+      fixture = TestBed.createComponent(MenuComponent);
+      component = fixture.componentInstance;
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('must be created', () => {
+      expect(component).toBeDefined();
+    });
+
+  it('must have an anchor element', () => {
+    const menuElement: HTMLAnchorElement = fixture.nativeElement;
+    const a = menuElement.querySelector('a');
+    expect(a?.href).toEqual('');
   });
 });

@@ -6,10 +6,10 @@ import {BaseHttpClient} from '../infrastructure/http-clients/base.http-client';
 @Injectable()
 export class EventsService extends BaseHttpClient {
 
-  private BASE_URI: string = "http://20.239.18.151";
+  private BASE_URI: string = "https://localhost";
   private EVENT_LIST_ENDPOINT: string = "/api/v1/Event/List/All";
   private CREATE_EVENT_ENDPOINT: string = "/api/v1/Schedule";
-
+  
   constructor(private httpClient: HttpClient) {
     super(httpClient);
   }

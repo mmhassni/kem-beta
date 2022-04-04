@@ -6,20 +6,19 @@ describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
-    })
-    .compileComponents();
-  });
-
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+      TestBed.configureTestingModule({declarations: [HeaderComponent]});
+      fixture = TestBed.createComponent(HeaderComponent);
+      component = fixture.componentInstance;
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('must be created', () => {
+      expect(component).toBeDefined();
+    });
+
+  it('must have an span element', () => {
+      const menuElement: HTMLHeadingElement = fixture.nativeElement;
+      const span = menuElement.querySelector('span');
+      expect(span?.textContent).toEqual('KEM platform');
+    });
 });
