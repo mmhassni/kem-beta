@@ -68,12 +68,12 @@ jobs:
       run: docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.BACKEND_APP_NAME }}:${{ github.sha }}
 
     # Container build to a Azure Container Registry (ACR) Frontend
-    #- name: docker build
-    #  run: docker build . -f ui.Dockerfile -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
+     - name: docker build
+       run: docker build . -f ui.Dockerfile -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
     
     # Container build to a Azure Container Registry (ACR) Frontend
-    #- name: docker push
-    #  run: docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
+     - name: docker push
+       run: docker push ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
     
     # Set the target Azure Kubernetes Service (AKS) cluster. 
     - uses: azure/aks-set-context@v1
@@ -112,7 +112,7 @@ jobs:
         # Fully qualified resource URL of the image(s) to be used for substitutions on the manifest files Example: contosodemo.azurecr.io/helloworld:test  
         images: |
           ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.BACKEND_APP_NAME }}:${{ github.sha }}
-        # ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
+          ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.FRONTEND_APP_NAME }}:${{ github.sha }}
         # Name of a docker-registry secret that has already been set up within the cluster. Each of these secret names are added under imagePullSecrets field for the workloads found in the input manifest files
         imagepullsecrets: |
           ${{ env.SECRET }}
