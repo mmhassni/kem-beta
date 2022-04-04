@@ -4,7 +4,7 @@ Kumojin Event Manager (Beta version)
 
 ## Description
 
-Kumojin test, 
+Kumojin test : a basic project for managing events with an adequate architecture.
 
 ## Getting Started
 
