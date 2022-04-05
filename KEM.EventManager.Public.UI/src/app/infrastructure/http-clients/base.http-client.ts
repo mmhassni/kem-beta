@@ -48,17 +48,14 @@ export abstract class BaseHttpClient {
   }
 
   private createBaseHeaders(): HttpHeaders {
-    // get access token
-    // let accessToken = '';
     let headers = new HttpHeaders();
 
     headers = headers.append('Content-Type', 'application/json');
-    headers = headers.append('Accept', 'application/json');
-    headers = headers.append('Access-Control-Allow-Origin', 'http://localhost:4200');
     headers = headers.append('Access-Control-Allow-Headers', 'application/json');
     headers = headers.append('Access-Control-Allow-Methods', '*');
-    // headers = headers.append('Authorization', 'Bearer ' + accessToken);
-
+    headers = headers.append('Access-Control-Allow-Origin', 'http://localhost:4200');
+    headers = headers.append('Accept', 'application/json');
+    
     return headers;
   }
 }

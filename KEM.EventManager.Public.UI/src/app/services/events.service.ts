@@ -8,7 +8,7 @@ import {BaseHttpClient} from '../infrastructure/http-clients/base.http-client';
 })
 export class EventsService extends BaseHttpClient {
 
-  private BASE_URI: string = "https://localhost:44358"; 
+  private BASE_URI: string = "http://20.239.18.151"; 
   private EVENT_LIST_ENDPOINT: string = "/api/v1/Event/List/All";
   private CREATE_EVENT_ENDPOINT: string = "/api/v1/Event/Schedule";
 
