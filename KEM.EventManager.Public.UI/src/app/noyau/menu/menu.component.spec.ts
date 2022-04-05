@@ -19,6 +19,7 @@ describe('HeaderComponent', () => {
   it('must have an anchor element', () => {
     const menuElement: HTMLAnchorElement = fixture.nativeElement;
     const a = menuElement.querySelector('a');
+    
     expect(a?.href).toEqual('');
   });
 });

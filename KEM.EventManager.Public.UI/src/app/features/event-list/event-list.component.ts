@@ -12,17 +12,17 @@ import {MatTableDataSource} from "@angular/material/table";
 export class EventListComponent implements OnInit {
 
   mockedEvents: Event[] = [
-    {name: 'event', description: 'desc', startDate: new Date(), endDate: new Date()},
-    {name: 'event', description: 'desc', startDate: new Date(), endDate: new Date()},
-    {name: 'event', description: 'desc', startDate: new Date(), endDate: new Date()},
-    {name: 'event', description: 'desc', startDate: new Date(), endDate: new Date()},
-    {name: 'event', description: 'desc', startDate: new Date(), endDate: new Date()},
-    {name: 'event', description: 'desc', startDate: new Date(), endDate: new Date()},
+    {name: 'event1', description: 'desc1', startTime: new Date(), finishTime: new Date(Date.now() + 3600*1) },
+    {name: 'event2', description: 'desc2', startTime: new Date(), finishTime: new Date(Date.now() + 3600*2) },
+    {name: 'event3', description: 'desc3', startTime: new Date(), finishTime: new Date(Date.now() + 3600*3) },
+    {name: 'event4', description: 'desc4', startTime: new Date(), finishTime: new Date(Date.now() + 3600*4) },
+    {name: 'event5', description: 'desc5', startTime: new Date(), finishTime: new Date(Date.now() + 3600*5) },
+    {name: 'event6', description: 'desc6', startTime: new Date(), finishTime: new Date(Date.now() + 3600*6) },
   ]
 
   eventsLoading: boolean = false;
   dataSource: MatTableDataSource<Event> = new MatTableDataSource<Event>(this.mockedEvents)
-  displayedColumns: string[] = ['name', 'description', 'startDate', 'endDate']
+  displayedColumns: string[] = ['name', 'description', 'startTime', 'finishTime']
 
   constructor(protected eventsService: EventsService) { }
 

@@ -19,7 +19,9 @@ describe('SidenavComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+
+  it('must be created', () => {
+    expect(component).toBeDefined();
   });
+
 });

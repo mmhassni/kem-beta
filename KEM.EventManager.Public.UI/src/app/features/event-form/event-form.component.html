@@ -15,9 +15,9 @@
     <mat-form-field appearance="outline">
       <mat-label>Start date</mat-label>
       <input matInput
-             name="startDate"
+             name="startTime"
              [ngxMatDatetimePicker]="pickerStart"
-             formControlName="startDate">
+             formControlName="startTime">
       <mat-datepicker-toggle matSuffix [for]="$any(pickerStart)"></mat-datepicker-toggle>
       <ngx-mat-datetime-picker #pickerStart [showSpinners]="true"
                                [showSeconds]="false"
@@ -34,9 +34,9 @@
     <mat-form-field appearance="outline">
       <mat-label>End date</mat-label>
       <input matInput
-             name="endDate"
+             name="finishTime"
              [ngxMatDatetimePicker]="pickerEnd"
-             formControlName="endDate">
+             formControlName="finishTime">
       <mat-datepicker-toggle matSuffix [for]="$any(pickerEnd)"></mat-datepicker-toggle>
       <ngx-mat-datetime-picker #pickerEnd [showSpinners]="true"
                                [showSeconds]="false"

@@ -17,18 +17,18 @@ export class EventFormComponent implements OnInit {
       Validators.maxLength(32)
     ]),
     description: new FormControl(''),
-    startDate: new FormControl(''),
-    endDate: new FormControl('', [
+    startTime: new FormControl(''),
+    finishTime: new FormControl('', [
     ]),
   }, [
-    this.checkDates('startDate', 'endDate')
+    this.checkDates('startTime', 'finishTime')
   ]);
 
   checkDates(start: string, end: string): ValidatorFn {
     return (form) => {
       if (form.value[end] < form.value[start]) {
         return {
-          endDate: 'End date should be less than start date',
+          finishTime: 'End date should be less than start date',
         }
       }
       return {};
